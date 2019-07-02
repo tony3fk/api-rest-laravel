@@ -11,7 +11,7 @@
 |
 */
 
-
+//rutas de prueba
 Route::get('/', function(){
     return '<h1>Hola mundo con Laravel</h1>';
 });
@@ -32,3 +32,28 @@ Route::get('/pruebas/{nombre?}', function($nombre=null){
 
 Route::get('/animales','PruebasController@index');
 Route::get('/test-orm','PruebasController@testOrm');
+
+//rutas del API
+
+        /*metodos http comunes:
+         * GET: conseguir datos o recursos.
+         * POST: guardar datos o recursos o hacer logica desde un formulario.
+         * PUT: Actualizar datos o recursos.
+         * DELETE: Eliminar datos o recursos.
+         * 
+        */
+
+        //rutas de prueba
+        Route::get('/usuario/pruebas','UserController@pruebas');
+        Route::get('/categoria/pruebas','CategoryController@pruebas');
+        Route::get('/entrada/pruebas','PostController@pruebas');
+        
+        
+        //rutas del controlador de usuarios
+        Route::post('/api/register','UserController@register');
+        Route::post('/api/login','UserController@login');
+        
+        
+        
+        
+        
