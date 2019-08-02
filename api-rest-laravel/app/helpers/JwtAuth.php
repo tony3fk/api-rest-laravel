@@ -7,7 +7,13 @@ use App\User;
 
 class JwtAuth
 {
-
+    public $key;
+    
+    public function __construct(){
+        $this->key='esto_es_una_clave_super_secreta-99887766';
+    }
+    
+    
     public function signup($email, $password, $gettoken = null)
     {
         // buscar si existe el usuario con sus credenciales
