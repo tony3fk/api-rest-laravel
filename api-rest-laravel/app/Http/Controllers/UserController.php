@@ -124,19 +124,64 @@ class UserController extends Controller
     
     public function update(Request $request){
         
+        
+        //comprobar si el usuario esta identificado
         $token=$request->header('Authorization');
         $jwtAuth=new \JwtAuth();
         $checkToken=$jwtAuth->checkToken($token);
         
-        if($checkToken){
-            echo "<h1> Login correcto </h1>";
+        
+        //recoger datos por POST
+        $json=$request->input('json', null);
+        $params_array= json_decode($json, true);
+        
+        
+        if($checkToken && !empty($params_array)){
+            
+            
+            
+            //sacar usuario identificado
+            $checkToken=$jwtAuth->checkToken($token, true);
+            
+            //validar datos
+            $validate = \Validator::make($params_array, [
+                'name' => 'required|alpha',
+                'surname' => 'required|alpha',
+                'email' => 'required|email|unique:users'.$user->sub
+            ]);
+            
+            //quitar campos que no quiero actualizar
+            unset($params_array['id']);
+            unset($params_array['role']);
+            unset($params_array['password']);
+            unset($params_array['created_at']);
+            unset($params_array['remember_token']);
+            
+            //actualizar usuario en el bbdd
+            
+            $user_update=User::where('id', $user->sub)->update($params_array);
+            
+            //devolver array con resultado
+            $data= array(
+                'code'=>200,
+                'status'=>'success',
+                'user'=>$user,
+                'changes'=>$params_array
+                
+            );
             
         }else{
-            echo "<h1> Login INCORRECTO </h1>";
+            $data= array(
+                'code'=>400,
+                'status'=>'error',
+                'message'=>'Usuario no esta identificado'
+                
+            );
+            
         }
         
         
-        die();
+        return response()->json($data, $data['code']);
         
         
     }
