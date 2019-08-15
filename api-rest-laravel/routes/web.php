@@ -11,6 +11,9 @@
 |
 */
 
+//Cargando clases
+use App\Http\Middleware\ApiAuthMiddleware;
+
 //rutas de prueba
 Route::get('/', function(){
     return '<h1>Hola mundo con Laravel</h1>';
@@ -53,7 +56,7 @@ Route::get('/test-orm','PruebasController@testOrm');
         Route::post('/api/register','UserController@register');
         Route::post('/api/login','UserController@login');
         Route::put('/api/user/update','UserController@update');
-        Route::post('/api/user/upload', 'UserController@upload');
+        Route::post('/api/user/upload','UserController@upload')->middleware(ApiAuthMiddleware::class);
         
         
         
