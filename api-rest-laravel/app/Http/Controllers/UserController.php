@@ -141,13 +141,13 @@ class UserController extends Controller
             
             
             //sacar usuario identificado
-            $checkToken=$jwtAuth->checkToken($token, true);
-            
+            $user=$jwtAuth->checkToken($token, true);
+          
             //validar datos
             $validate = \Validator::make($params_array, [
                 'name' => 'required|alpha',
                 'surname' => 'required|alpha',
-                'email' => 'required|email|unique:users'.$user->sub
+                'email' => 'required|email|unique:users,'.$user->sub
             ]);
             
             //quitar campos que no quiero actualizar
@@ -183,6 +183,19 @@ class UserController extends Controller
         
         return response()->json($data, $data['code']);
         
+        
+    }
+    
+    public function upload (Request $request){
+        
+        $data= array(
+            'code'=>400,
+            'status'=>'error',
+            'message'=>'Usuario no esta identificado'
+            
+        );
+        
+        return response($data, $data['code'])->header('Content-Type', 'text/plain');
         
     }
 }
