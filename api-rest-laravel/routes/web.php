@@ -47,9 +47,9 @@ Route::get('/test-orm','PruebasController@testOrm');
         */
 
         //rutas de prueba
-        Route::get('/usuario/pruebas','UserController@pruebas');
-        Route::get('/categoria/pruebas','CategoryController@pruebas');
-        Route::get('/entrada/pruebas','PostController@pruebas');
+        //Route::get('/usuario/pruebas','UserController@pruebas');
+        //Route::get('/categoria/pruebas','CategoryController@pruebas');
+       // Route::get('/entrada/pruebas','PostController@pruebas');
         
         
         //rutas del controlador de usuarios
@@ -60,6 +60,9 @@ Route::get('/test-orm','PruebasController@testOrm');
         Route::get('/api/user/avatar/{filename}', 'UserController@getImage');
         Route::get('/api/user/detail/{id}', 'UserController@detail');
         
+        
+        //rutas de controlador de categorias
+        Route::resource('/api/category','CategoryController');
         
         
         
