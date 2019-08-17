@@ -65,4 +65,9 @@ Route::get('/test-orm','PruebasController@testOrm');
         Route::resource('/api/category','CategoryController');
         
         
+        //rutas de controlador de entradas
+        Route::resource('/api/post', 'PostController');
+        
+        
+        
         
