@@ -15,7 +15,9 @@ class PostController extends Controller
             'except' => [
                 'index',
                 'show',
-                'getImage'
+                'getImage',
+                'getPostsByCategory',
+                'getPostsByUser'
             ]
         ]);
     }
@@ -58,8 +60,8 @@ class PostController extends Controller
         $params_array = json_decode($json, true);
 
         if (! empty($params_array)) {
-            //conseguir usuario identificado
-            $user=$this->getIdentity($request);
+            // conseguir usuario identificado
+            $user = $this->getIdentity($request);
 
             // validar los datos
             $validate = \Validator::make($params_array, [
@@ -132,19 +134,17 @@ class PostController extends Controller
             unset($params_array['user_id']);
             unset($params_array['created_at']);
             unset($params_array['user']);
-            
-            //conseguir usuario identificado
-            $user=$this->getIdentity($request);
+
+            // conseguir usuario identificado
+            $user = $this->getIdentity($request);
 
             // buscar a actualizar
-            $post = Post::where('id', $id)
-            ->where('user_id',$user->sub)
-            ->first();
-            
-            if(!empty($post) && is_object($post)){
-                //actualizar el registro en concreto
+            $post = Post::where('id', $id)->where('user_id', $user->sub)->first();
+
+            if (! empty($post) && is_object($post)) {
+                // actualizar el registro en concreto
                 $post->update($params_array);
-                
+
                 // devolver algo
                 $data = array(
                     'code' => 200,
@@ -152,16 +152,14 @@ class PostController extends Controller
                     'post' => $post,
                     'changes' => $params_array
                 );
-                
             }
             /*
-            $where=[
-                'id'=>$id,
-                'user_id'=>$user->sub
-            ];
-            $post = Post::updateOrCreate($where, $params_array);
-            */
-            
+             * $where=[
+             * 'id'=>$id,
+             * 'user_id'=>$user->sub
+             * ];
+             * $post = Post::updateOrCreate($where, $params_array);
+             */
         }
 
         return response()->json($data, $data['code']);
@@ -169,13 +167,11 @@ class PostController extends Controller
 
     public function destroy($id, Request $request)
     {
-        //conseguir usuario identificado
-        $user=$this->getIdentity($request);
-        
+        // conseguir usuario identificado
+        $user = $this->getIdentity($request);
+
         // conseguir el registro
-        $post = Post::where('id', $id)
-                    ->where('user_id',$user->sub)
-                    ->first();
+        $post = Post::where('id', $id)->where('user_id', $user->sub)->first();
 
         if (! empty($post)) {
             // borrarlo
@@ -186,7 +182,7 @@ class PostController extends Controller
                 'status' => 'success',
                 'post' => $post
             );
-        }else{
+        } else {
             $data = array(
                 'code' => 404,
                 'status' => 'error',
@@ -196,70 +192,87 @@ class PostController extends Controller
 
         return response()->json($data, $data['code']);
     }
-    
-    private function getIdentity($request){
+
+    private function getIdentity($request)
+    {
         $jwtAuth = new JwtAuth();
         $token = $request->header('Authorization', null);
         $user = $jwtAuth->checkToken($token, true);
-        
+
         return $user;
     }
-    
-    public function upload(Request $request){
-        //recoger imagen de la peticion
-        $image=$request->file('file0');
-        
-        //validar imagen
-        $validate= \Validator::make($request->all(), [
-            'file0'=>'required|image|mimes:jpg,jpeg,png,gif'
+
+    public function upload(Request $request)
+    {
+        // recoger imagen de la peticion
+        $image = $request->file('file0');
+
+        // validar imagen
+        $validate = \Validator::make($request->all(), [
+            'file0' => 'required|image|mimes:jpg,jpeg,png,gif'
         ]);
-        
-        //guardar imagen 
-        if(!$image || $validate->fails()){
+
+        // guardar imagen
+        if (! $image || $validate->fails()) {
             $data = array(
                 'code' => 400,
                 'status' => 'error',
                 'message' => 'Error al subir la imagen'
             );
-        }else{
-            $image_name=time().$image->getClientOriginalName();
+        } else {
+            $image_name = time() . $image->getClientOriginalName();
             \Storage::disk('images')->put($image_name, \File::get($image));
-            
+
             $data = array(
                 'code' => 200,
                 'status' => 'success',
                 'image' => $image_name
             );
         }
-        
-        //devolver datos
+
+        // devolver datos
         return response()->json($data, $data['code']);
     }
-    
-    public function getImage($filename) {
-        //comprobar si existe el fichero
-        $isset=\Storage::disk('images')->exists($filename);
-        
-        if($isset){
-            //conseguir la imagen
-            $file=\Storage::disk('images')->get($filename);
-            
-            
-            //devolver la imagen
-            
+
+    public function getImage($filename)
+    {
+        // comprobar si existe el fichero
+        $isset = \Storage::disk('images')->exists($filename);
+
+        if ($isset) {
+            // conseguir la imagen
+            $file = \Storage::disk('images')->get($filename);
+
+            // devolver la imagen
+
             return new Response($file, 200);
-            
-        }else{
+        } else {
             $data = array(
                 'code' => 404,
                 'status' => 'error',
                 'message' => 'No existe la imagen'
             );
         }
-        
+
         return response()->json($data, $data['code']);
+    }
+    
+    public function getPostsByCategory($id) {
+        $posts = Post::where('category_id', $id)->get();
         
+        return response()->json([
+            'status'=>'success',
+            'posts'=>$posts
+        ], 200);
+    }
+    
+    public function getPostsByUser($id) {
+        $posts = Post::where('user_id', $id)->get();
         
+        return response()->json([
+            'status'=>'success',
+            'posts'=>$posts
+        ], 200);
     }
 }
 ?>

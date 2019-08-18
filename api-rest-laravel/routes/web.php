@@ -69,6 +69,9 @@ Route::get('/test-orm','PruebasController@testOrm');
         Route::resource('/api/post', 'PostController');
         Route::post('/api/post/upload','PostController@upload');
         Route::get('/api/post/image/{filename}', 'PostController@getImage');
+        Route::get('/api/post/image/{filename}', 'PostController@getImage');
+        Route::get('/api/post/category/{id}', 'PostController@getPostsByCategory');
+        Route::get('/api/post/user/{id}', 'PostController@getPostsByUser');
         
         
         
