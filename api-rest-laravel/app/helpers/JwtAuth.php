@@ -85,7 +85,7 @@ class JwtAuth
         }
         
         if($getIdentity){
-            return $decoded;
+            return $decoded ;
         }
         return $auth;
     }
