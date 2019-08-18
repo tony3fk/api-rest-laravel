@@ -68,6 +68,7 @@ Route::get('/test-orm','PruebasController@testOrm');
         //rutas de controlador de entradas
         Route::resource('/api/post', 'PostController');
         Route::post('/api/post/upload','PostController@upload');
+        Route::get('/api/post/image/{filename}', 'PostController@getImage');
         
         
         
