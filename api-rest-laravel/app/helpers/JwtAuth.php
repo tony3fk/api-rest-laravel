@@ -72,7 +72,7 @@ class JwtAuth
         try{
             $jwt=str_replace('"', '', $jwt);
             $decoded = JWT::decode($jwt, $this->key, ['HS256']);
-        }catch (\UnexpectedValieException $e){
+        }catch (\UnexpectedValueException $e){
             $auth= false;
         }catch(\DomainException $e){
             $auth= false;

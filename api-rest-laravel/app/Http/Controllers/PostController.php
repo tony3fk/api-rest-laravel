@@ -56,7 +56,7 @@ class PostController extends Controller
         $params = json_decode($json);
         $params_array = json_decode($json, true);
 
-        if (! empty($params_array)) {
+        if (!empty($params_array)) {
             // conseguir usuario identificado
             $jwtAuth = new JwtAuth();
             $token = $request->header('Authorization', null);
@@ -73,7 +73,7 @@ class PostController extends Controller
                 $data = array(
                     'code' => 400,
                     'status' => 'error',
-                    'message' => 'Faltan datos'
+                    'message' => 'No se ha guardado el post, faltan datos'
                 );
             } else {
                 // guardar post
@@ -93,7 +93,7 @@ class PostController extends Controller
             }
         } else {
             $data = array(
-                'code' => 404,
+                'code' => 400,
                 'status' => 'error',
                 'message' => 'Envia los datos correctamente'
             );
