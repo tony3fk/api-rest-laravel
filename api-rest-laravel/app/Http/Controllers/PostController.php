@@ -56,7 +56,7 @@ class PostController extends Controller
         $params = json_decode($json);
         $params_array = json_decode($json, true);
 
-        if (!empty($params_array)) {
+        if (! empty($params_array)) {
             // conseguir usuario identificado
             $jwtAuth = new JwtAuth();
             $token = $request->header('Authorization', null);
@@ -67,7 +67,7 @@ class PostController extends Controller
                 'title' => 'required',
                 'content' => 'required',
                 'category_id' => 'required',
-                'image'=>'required'
+                'image' => 'required'
             ]);
             if ($validate->fails()) {
                 $data = array(
@@ -101,50 +101,77 @@ class PostController extends Controller
 
         return response()->json($data, $data['code']);
     }
-    
-    public function update($id, Request $request) {
-        //recoger datos por post
+
+    public function update($id, Request $request)
+    {
+        // recoger datos por post
         $json = $request->input('json', null);
         $params_array = json_decode($json, true);
-        
-        //datos para devolver
+
+        // datos para devolver
         $data = array(
             'code' => 400,
             'status' => 'error',
             'message' => 'datos enviados incorrectamente'
         );
-        
-        if(!empty($params_array)){
-        
-            //validar los datos
-            $validate=\Validator::make($params_array, [
-                'title'=>'required',
-                'content'=>'required',
-                'category_id'=>'required'
+
+        if (! empty($params_array)) {
+
+            // validar los datos
+            $validate = \Validator::make($params_array, [
+                'title' => 'required',
+                'content' => 'required',
+                'category_id' => 'required'
             ]);
-            
-            if($validate->fails()){
-                $data['errors']=$validate->errors();
-                return response()->json($data,$data['code']);
+
+            if ($validate->fails()) {
+                $data['errors'] = $validate->errors();
+                return response()->json($data, $data['code']);
             }
-            //eliminar lo que no queremos actualizar
+            // eliminar lo que no queremos actualizar
             unset($params_array['id']);
             unset($params_array['user_id']);
             unset($params_array['created_at']);
             unset($params_array['user']);
-            
-            //actualizar el registro en concreto
-            $post=Post::where('id', $id)->updateOrCreate($params_array);
-            
-            //devolver algo
+
+            // actualizar el registro en concreto
+            $post = Post::where('id', $id)->updateOrCreate($params_array);
+
+            // devolver algo
             $data = array(
                 'code' => 200,
                 'status' => 'success',
-                'post'=>$post,
+                'post' => $post,
                 'changes' => $params_array
             );
         }
-            
+
+        return response()->json($data, $data['code']);
+    }
+
+    public function destroy($id, Request $request)
+    {
+
+        // conseguir el registro
+        $post = Post::find($id);
+
+        if (! empty($post)) {
+            // borrarlo
+            $post->delete();
+            // devolver algo
+            $data = array(
+                'code' => 200,
+                'status' => 'success',
+                'post' => $post
+            );
+        }else{
+            $data = array(
+                'code' => 404,
+                'status' => 'error',
+                'message' => 'el post no existe'
+            );
+        }
+
         return response()->json($data, $data['code']);
     }
 }
