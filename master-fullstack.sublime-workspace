@@ -1,0 +1,429 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"p",
+				"pkgd"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"marig",
+				"margin-left"
+			],
+			[
+				"texta",
+				"text-align"
+			],
+			[
+				"border",
+				"border-right"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"lis",
+				"lis\tlist-style"
+			],
+			[
+				"ali",
+				"text-align"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"col",
+				"color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "blog-angular/src/app/models/user.ts",
+			"settings":
+			{
+				"buffer_size": 238,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "blog-angular/src/app/models/category.ts",
+			"settings":
+			{
+				"buffer_size": 91,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "blog-angular/src/app/models/post.ts",
+			"settings":
+			{
+				"buffer_size": 220,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 490.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"sublime merge",
+				"Sublime Merge: Open Repository"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Local Dependency"
+			]
+		],
+		"width": 490.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp64/www/master-fullstack",
+		"/C/wamp64/www/master-fullstack/blog-angular",
+		"/C/wamp64/www/master-fullstack/blog-angular/src",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/models"
+	],
+	"file_history":
+	[
+		"/C/wamp64/www/master-fullstack/blog-angular/angular.json",
+		"/C/wamp64/www/master-fullstack/blog-angular/package.json",
+		"/C/wamp64/www/master-fullstack/blog-angular/node_modules/froala-editor/js/froala_editor.pkgd.min.js",
+		"/C/xampp/htdocs/SERVIDOR/SolucionAlimentos/web/index.php",
+		"/C/xampp/htdocs/SERVIDOR/SolucionAlimentos/app/templates/verAlimento.php",
+		"/C/xampp/htdocs/SERVIDOR/SolucionAlimentos/app/templates/mostrarAlimentos.php",
+		"/C/xampp/htdocs/SERVIDOR/SolucionAlimentos/app/templates/layout.php",
+		"/C/xampp/htdocs/SERVIDOR/SolucionAlimentos/app/templates/inicio.php",
+		"/C/xampp/htdocs/SERVIDOR/SolucionAlimentos/app/templates/formInsertar.php",
+		"/C/xampp/htdocs/SERVIDOR/SolucionAlimentos/app/templates/buscarPorNombre.php",
+		"/C/xampp/htdocs/SERVIDOR/SolucionAlimentos/app/templates/buscarCombinada.php",
+		"/C/xampp/htdocs/SERVIDOR/SolucionAlimentos/app/templates/borrarAlimentos.php",
+		"/C/xampp/htdocs/SERVIDOR/SolucionAlimentos/app/Model.php",
+		"/C/xampp/htdocs/SERVIDOR/SolucionAlimentos/app/Controller.php",
+		"/C/xampp/htdocs/SERVIDOR/SolucionAlimentos/app/Config.php",
+		"/C/Users/tony3/Downloads/Taller Vue2JS CEEDCV/hola-mundo/index.html",
+		"/C/Users/tony3/Downloads/Taller Vue2JS CEEDCV/hola-mundo/js/app.js",
+		"/C/Users/tony3/Documents/1daw/LM/web.a.completar.xpath/alumnos/index.html",
+		"/C/Users/tony3/Downloads/Taller Vue2JS CEEDCV/facturacion-con-login/index.html",
+		"/C/Users/tony3/Downloads/examen/ej1/css/style.css",
+		"/C/Users/tony3/Downloads/examen/ej1/index.html",
+		"/C/Users/tony3/AppData/Local/Temp/Rar$DIa2184.28737/style.css",
+		"/C/Users/tony3/Downloads/examen/ej4/index.html",
+		"/C/Users/tony3/Downloads/examen/ej4/css/style.css",
+		"/C/Users/tony3/Downloads/examen/ej3/index.html",
+		"/C/Users/tony3/Downloads/examen/ej3/css/style.css",
+		"/C/Users/tony3/Downloads/examen/ej2/index.html",
+		"/C/Users/tony3/Downloads/examen/ej2/css/style.css",
+		"/C/Users/tony3/Downloads/clase/clase/cuento.html",
+		"/C/Users/tony3/Downloads/clase/clase/cuento.sol.html",
+		"/C/Users/tony3/Downloads/clase/clase/estilo.css",
+		"/C/Users/tony3/Downloads/clase/clase/media.html",
+		"/C/Users/tony3/Downloads/clase/clase/enunciado.ejercicio1.justificar.css.pdf",
+		"/C/Users/tony3/Downloads/clase/clase/solucion.ejercicio1.justificar.css.pdf",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.5/estilo.css",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.5/practicas.html",
+		"/C/Users/tony3/AppData/Roaming/Sublime Text 3/Packages/User/chrome.sublime-build",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.4/estilo.css",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.4/practicas.html",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.3/practicas.html",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.3/estilo.css",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.2/estilo.css",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.2/practicas.html",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/formulario.inicio/1-original/formulario.html",
+		"/C/Users/tony3/Downloads/formulario.fin/estilo.css",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/formulario.inicio/1-original/estilo.css",
+		"/C/Users/tony3/Downloads/formulario.fin/formulario.html",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.10/parte3/profundidad.html",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.10/parte3/estilo.css",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.10/parte2/estilo.css",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.10/parte2/posicionamiento.html",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.10/posicionamiento.html",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.10/profundidad.html",
+		"/C/Users/tony3/Downloads/9-Posicionamiento/9-Posicionamiento/a-texto.en.medio/posicionamiento-solucion.html",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.10/estilo.css",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.9/Tablas.html",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.9/estilo.css",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.8/estilo.css",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.8/Bordes.html",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.7/Listas.html",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.7/estilo.css",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.7/practicas.html",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.6/estilo.css",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/pratica5.4/practicas.html",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/pratica5.4/estilo.css",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.1/html5/plantilla.html",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/ficheros/originales/practicas.html",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.1/html5/estilo.css",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.1/html4/plantilla.html",
+		"/C/Users/tony3/Documents/1daw/LM/repaso_evaluacion1/practica5.1/html4/estilo.css"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"li",
+			"footer"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "blog-angular/src/app/models/user.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 238,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35,
+								230
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "blog-angular/src/app/models/category.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 91,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								91
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "blog-angular/src/app/models/post.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 220,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								209,
+								209
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/chrome.sublime-build",
+	"project": "master-fullstack.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 377.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
