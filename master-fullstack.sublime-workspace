@@ -72,7 +72,6 @@
 			"settings":
 			{
 				"buffer_size": 238,
-				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -81,7 +80,6 @@
 			"settings":
 			{
 				"buffer_size": 91,
-				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -90,7 +88,6 @@
 			"settings":
 			{
 				"buffer_size": 220,
-				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -147,6 +144,9 @@
 	],
 	"file_history":
 	[
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/models/user.ts",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/models/category.ts",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/models/post.ts",
 		"/C/wamp64/www/master-fullstack/blog-angular/angular.json",
 		"/C/wamp64/www/master-fullstack/blog-angular/package.json",
 		"/C/wamp64/www/master-fullstack/blog-angular/node_modules/froala-editor/js/froala_editor.pkgd.min.js",
@@ -269,13 +269,14 @@
 						"selection":
 						[
 							[
-								35,
-								230
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/TypeScript/TypeScript-Sublime-Plugin-master/TypeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -298,12 +299,12 @@
 						[
 							[
 								0,
-								91
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/TypeScript/TypeScript-Sublime-Plugin-master/TypeScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -325,14 +326,14 @@
 						"selection":
 						[
 							[
-								209,
-								209
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"auto_name": "",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/TypeScript/TypeScript-Sublime-Plugin-master/TypeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
