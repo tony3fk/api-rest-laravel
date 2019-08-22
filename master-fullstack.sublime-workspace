@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"Ro",
+				"RouterModule"
+			],
+			[
+				"lo",
+				"LoginComponent"
+			],
+			[
 				"p",
 				"pkgd"
 			],
@@ -26,10 +42,6 @@
 			[
 				"border",
 				"border-right"
-			],
-			[
-				"in",
-				"inline"
 			],
 			[
 				"pa",
@@ -68,27 +80,21 @@
 	"buffers":
 	[
 		{
-			"file": "blog-angular/src/app/models/user.ts",
+			"file": "blog-angular/src/app/components/register/register.component.html",
 			"settings":
 			{
-				"buffer_size": 238,
-				"line_ending": "Windows"
+				"buffer_size": 842,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "blog-angular/src/app/models/category.ts",
+			"file": "blog-angular/src/app/app.module.ts",
 			"settings":
 			{
-				"buffer_size": 91,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "blog-angular/src/app/models/post.ts",
-			"settings":
-			{
-				"buffer_size": 220,
-				"line_ending": "Windows"
+				"buffer_size": 827,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -140,13 +146,30 @@
 		"/C/wamp64/www/master-fullstack/blog-angular",
 		"/C/wamp64/www/master-fullstack/blog-angular/src",
 		"/C/wamp64/www/master-fullstack/blog-angular/src/app",
-		"/C/wamp64/www/master-fullstack/blog-angular/src/app/models"
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/components",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/components/error",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/components/home",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/components/register"
 	],
 	"file_history":
 	[
-		"/C/wamp64/www/master-fullstack/blog-angular/src/app/models/user.ts",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/app.component.html",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/app.routing.ts",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/app.module.ts",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/components/home/home.component.ts",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/components/home/home.component.html",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/components/error/error.component.ts",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/components/error/error.component.html",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/components/register/register.component.html",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/components/register/register.component.ts",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/components/login/login.component.html",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/components/login/login.component.ts",
 		"/C/wamp64/www/master-fullstack/blog-angular/src/app/models/category.ts",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/main.ts",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/app.component.css",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/components/login/login.component.css",
 		"/C/wamp64/www/master-fullstack/blog-angular/src/app/models/post.ts",
+		"/C/wamp64/www/master-fullstack/blog-angular/src/app/models/user.ts",
 		"/C/wamp64/www/master-fullstack/blog-angular/angular.json",
 		"/C/wamp64/www/master-fullstack/blog-angular/package.json",
 		"/C/wamp64/www/master-fullstack/blog-angular/node_modules/froala-editor/js/froala_editor.pkgd.min.js",
@@ -234,6 +257,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\t\n",
 			"li",
 			"footer"
 		],
@@ -253,93 +277,65 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "blog-angular/src/app/models/user.ts",
+					"file": "blog-angular/src/app/components/register/register.component.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 238,
+						"buffer_size": 842,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								835,
+								835
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/TypeScript/TypeScript-Sublime-Plugin-master/TypeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "blog-angular/src/app/models/category.ts",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 91,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/TypeScript/TypeScript-Sublime-Plugin-master/TypeScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "blog-angular/src/app/models/post.ts",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 220,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/TypeScript/TypeScript-Sublime-Plugin-master/TypeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "blog-angular/src/app/app.module.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 827,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								146,
+								146
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript-Sublime-Plugin-master/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
