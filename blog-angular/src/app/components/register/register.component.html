@@ -5,6 +5,13 @@
 
 	<p>Regístrate en nuestra plataforma para crear nuevas entradas y mucho más!!</p>
 
+	<div class="alert alert-success" *ngIf="status=='success'">
+		El registro se ha completado correctamente, <a [routerLink]="['/login']">login aquí</a>
+	</div>
+	<div class="alert alert-danger" *ngIf="status=='error'">
+		El registro NO se ha completado, vuelve a intentarlo.
+	</div>
+
 	<!--Formulario de registro-->
 
 	<form class="col-md-5 ml-0 pl-0" #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
