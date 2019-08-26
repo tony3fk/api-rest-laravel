@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { user } from '../../models/user';
+import { User } from '../../models/user';
 import { UserService } from '../../services/user.service';
 
 @Component({
@@ -12,7 +12,7 @@ import { UserService } from '../../services/user.service';
 export class RegisterComponent implements OnInit {
 
   public page_title: string;
-  public user: user;
+  public user: User;
   public status: string;
 
 
@@ -20,7 +20,7 @@ export class RegisterComponent implements OnInit {
     private _userService: UserService
   ) {
     this.page_title = 'Regístrate';
-    this.user = new user(1, '', '', 'ROLE_USER', '', '', '', '');
+    this.user = new User(1, '', '', 'ROLE_USER', '', '', '', '');
 
   }
 

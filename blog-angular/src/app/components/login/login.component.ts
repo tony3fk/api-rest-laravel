@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
-import { user } from '../../models/user';
+import { User } from '../../models/user';
 import { UserService } from '../../services/user.service';
 
 @Component({
@@ -12,7 +12,7 @@ import { UserService } from '../../services/user.service';
 export class LoginComponent implements OnInit {
 
   public page_title: string;
-  public user: user;
+  public user: User;
   public status: string;
   public token;
   public identity;
@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
     private _route: ActivatedRoute
   ) {
     this.page_title = 'Identifícate';
-    this.user = new user(1, '', '', 'ROLE_USER', '', '', '', '');
+    this.user = new User(1, '', '', 'ROLE_USER', '', '', '', '');
   }
 
   ngOnInit() {
